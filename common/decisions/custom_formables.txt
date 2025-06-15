@@ -1,0 +1,3138 @@
+german_formables_category = {
+
+    form_greater_prussia = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = PRE
+                original_tag = SIL
+                original_tag = KSH
+                original_tag = DDR
+            }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 188
+                controls_state = 763
+                controls_state = 5
+                controls_state = 85
+                controls_state = 807
+                controls_state = 86
+                controls_state = 63
+                controls_state = 68
+                controls_state = 66
+                controls_state = 67
+                controls_state = 762
+                controls_state = 87
+                controls_state = 98
+                controls_state = 97
+                controls_state = 814
+                controls_state = 10
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = PRE
+                original_tag = SIL
+                original_tag = KSH
+                original_tag = DDR
+            }
+            NOT = { has_global_flag = form_greater_prussia_flag }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 188
+                state = 763
+                state = 5
+                state = 85
+                state = 807
+                state = 86
+                state = 63
+                state = 68
+                state = 66
+                state = 67
+                state = 762
+                state = 87
+                state = 98
+                state = 97
+                state = 814
+                state = 10
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GRE_prussia
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+			hidden_effect = {
+				188 = { add_core_of = ROOT }
+                763 = { add_core_of = ROOT }
+                5 = { add_core_of = ROOT }
+                85 = { add_core_of = ROOT }
+                807 = { add_core_of = ROOT }
+                86 = { add_core_of = ROOT }
+                63 = { add_core_of = ROOT }
+                68 = { add_core_of = ROOT }
+                66 = { add_core_of = ROOT }
+                67 = { add_core_of = ROOT }
+                762 = { add_core_of = ROOT }
+                87 = { add_core_of = ROOT }
+                98 = { add_core_of = ROOT }
+                97 = { add_core_of = ROOT }
+                814 = { add_core_of = ROOT }
+                10 = { add_core_of = ROOT }
+			}
+            hidden_effect = { set_global_flag = form_greater_prussia_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_prussia_flag}
+
+}
+            set_capital = { state = 763 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+
+    form_ddr = {
+
+        icon = GFX_decision_decision_category_GER_volkskommissariats
+
+        allowed = {
+            OR = {
+                original_tag = DDR
+                original_tag = MEK
+                original_tag = SAX
+                original_tag = THU
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = DDR
+                original_tag = MEK
+                original_tag = SAX
+                original_tag = THU
+            }
+            NOT = { has_global_flag = form_ddr_flag}
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 62
+                controls_state = 61
+                controls_state = 64
+                controls_state = 65
+                controls_state = 60
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 62
+                state = 61
+                state = 64
+                state = 65
+                state = 60
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = DDR_formable
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                62 = { add_core_of = ROOT }
+                61 = { add_core_of = ROOT }
+                64 = { add_core_of = ROOT }
+                65 = { add_core_of = ROOT }
+                60 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_ddr_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_east_germany_flag}
+
+}
+            set_capital = { state = 64 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+
+    form_brd = {
+
+        icon = GFX_german_formable_decision
+
+        allowed = {
+            OR = {
+                original_tag = SHL
+                original_tag = HAN
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = WUR
+                original_tag = BAY
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = SHL
+                original_tag = HAN
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = WUR
+                original_tag = BAY
+            }
+            NOT = { has_global_flag = form_brd_flag}
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 909
+                controls_state = 58
+                controls_state = 59
+                controls_state = 56
+                controls_state = 57
+                controls_state = 55
+                controls_state = 51
+                controls_state = 42
+                controls_state = 978
+                controls_state = 50
+                controls_state = 54
+                controls_state = 53
+                controls_state = 52
+                controls_state = 1025
+                controls_state = 1026
+                controls_state = 1027
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 909
+                state = 58
+                state = 59
+                state = 56
+                state = 57
+                state = 55
+                state = 51
+                state = 42
+                state = 978
+                state = 50
+                state = 54
+                state = 53
+                state = 52
+                state = 1025
+                state = 1026
+                state = 1027
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = BRD_formable
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                909 = { add_core_of = ROOT }
+                58 = { add_core_of = ROOT }
+                59 = { add_core_of = ROOT }
+                56 = { add_core_of = ROOT }
+                57 = { add_core_of = ROOT }
+                55 = { add_core_of = ROOT }
+                51 = { add_core_of = ROOT }
+                42 = { add_core_of = ROOT }
+                978 = { add_core_of = ROOT }
+                50 = { add_core_of = ROOT }
+                54 = { add_core_of = ROOT }
+                53 = { add_core_of = ROOT }
+                52 = { add_core_of = ROOT }
+                1025 = { add_core_of = ROOT }
+                1026 = { add_core_of = ROOT }
+                1027 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_brd_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_west_germany_flag}
+
+}
+            set_capital = { state = 51 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+
+    form_german_confederation = {
+
+        icon = GFX_german_formable_decision
+
+        allowed = {
+            OR = {
+                original_tag = AUS
+                original_tag = BAY
+                original_tag = WUR
+                original_tag = HES 
+                original_tag = RHI 
+                original_tag = WGR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = THU
+                original_tag = SAX
+                original_tag = DDR 
+                original_tag = MEK 
+                original_tag = SIL
+                original_tag = KSH
+                original_tag = VGE
+                original_tag = LUX
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = AUS
+                original_tag = BAY
+                original_tag = WUR
+                original_tag = HES 
+                original_tag = RHI 
+                original_tag = WGR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = THU
+                original_tag = SAX
+                original_tag = DDR 
+                original_tag = MEK 
+                original_tag = SIL
+                original_tag = KSH
+                original_tag = VGE
+                original_tag = LUX
+            }
+            NOT = { has_global_flag = form_german_confederation_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 58
+                controls_state = 59
+                controls_state = 56
+                controls_state = 57
+                controls_state = 55
+                controls_state = 51
+                controls_state = 42
+                controls_state = 978
+                controls_state = 50
+                controls_state = 54
+                controls_state = 53
+                controls_state = 52
+                controls_state = 62
+                controls_state = 61
+                controls_state = 64
+                controls_state = 65
+                controls_state = 60
+                controls_state = 8
+                controls_state = 63
+                controls_state = 68
+                controls_state = 66
+                controls_state = 67
+                controls_state = 762
+                controls_state = 848
+                controls_state = 153
+                controls_state = 976
+                controls_state = 152
+                controls_state = 4
+                controls_state = 39
+                controls_state = 850
+                controls_state = 102
+                controls_state = 853
+                controls_state = 736
+                controls_state = 972
+                controls_state = 69
+                controls_state = 9
+                controls_state = 75
+                controls_state = 74
+                controls_state = 72
+                controls_state = 1019
+                controls_state = 1025
+                controls_state = 1026
+                controls_state = 1027
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 58
+                state = 59
+                state = 56
+                state = 57
+                state = 55
+                state = 51
+                state = 42
+                state = 978
+                state = 50
+                state = 54
+                state = 53
+                state = 52
+                state = 62
+                state = 61
+                state = 64
+                state = 65
+                state = 60
+                state = 8
+                state = 63
+                state = 68
+                state = 66
+                state = 67
+                state = 762
+                state = 848
+                state = 153
+                state = 976
+                state = 152
+                state = 4
+                state = 39
+                state = 850
+                state = 102
+                state = 853
+                state = 736
+                state = 972
+                state = 69
+                state = 9
+                state = 75
+                state = 74
+                state = 72
+                state = 1019
+                state = 1025
+                state = 1026
+                state = 1027
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GER_confederation
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                58 = { add_core_of = ROOT }
+                59 = { add_core_of = ROOT }
+                56 = { add_core_of = ROOT }
+                57 = { add_core_of = ROOT }
+                55 = { add_core_of = ROOT }
+                51 = { add_core_of = ROOT }
+                42 = { add_core_of = ROOT }
+                978 = { add_core_of = ROOT }
+                50 = { add_core_of = ROOT }
+                54 = { add_core_of = ROOT }
+                53 = { add_core_of = ROOT }
+                52 = { add_core_of = ROOT }
+                62 = { add_core_of = ROOT }
+                61 = { add_core_of = ROOT }
+                64 = { add_core_of = ROOT }
+                65 = { add_core_of = ROOT }
+                60 = { add_core_of = ROOT }
+                8 = { add_core_of = ROOT }
+                63 = { add_core_of = ROOT }
+                68 = { add_core_of = ROOT }
+                66 = { add_core_of = ROOT }
+                67 = { add_core_of = ROOT }
+                762 = { add_core_of = ROOT }
+                848 = { add_core_of = ROOT }
+                153 = { add_core_of = ROOT }
+                976 = { add_core_of = ROOT }
+                152 = { add_core_of = ROOT }
+                4 = { add_core_of = ROOT }
+                39 = { add_core_of = ROOT }
+                850 = { add_core_of = ROOT }
+                102 = { add_core_of = ROOT }
+                853 = { add_core_of = ROOT }
+                736 = { add_core_of = ROOT }
+                972 = { add_core_of = ROOT }
+                69 = { add_core_of = ROOT }
+                9 = { add_core_of = ROOT }
+                75 = { add_core_of = ROOT }
+                74 = { add_core_of = ROOT }
+                72 = { add_core_of = ROOT }
+                1019 = { add_core_of = ROOT }
+                1025 = { add_core_of = ROOT }
+                1026 = { add_core_of = ROOT }
+                1027 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_german_confederation_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_german_confederation_flag}
+
+}
+            set_capital = { state = 55 }
+        }
+
+        ai_will_do = {
+            base 1000
+        }
+    }
+
+    form_teutonic_order = {
+
+        icon = GFX_baltic_formable_decision
+
+        allowed = {
+            OR = {
+                original_tag = EST
+                original_tag = LAT
+                original_tag = LIT
+                original_tag = PRE
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = EST
+                original_tag = LAT
+                original_tag = LIT
+                original_tag = PRE
+            }
+            NOT = { has_global_flag = form_teutonic_order_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 811
+                controls_state = 812
+                controls_state = 813
+                controls_state = 13
+                controls_state = 191
+                controls_state = 12
+                controls_state = 810
+                controls_state = 808
+                controls_state = 809
+                controls_state = 190
+                controls_state = 189
+                controls_state = 815
+                controls_state = 11
+                controls_state = 814
+                controls_state = 188
+                controls_state = 763
+                controls_state = 5
+                controls_state = 85
+                controls_state = 807
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 811
+                state = 812
+                state = 813
+                state = 13
+                state = 191
+                state = 12
+                state = 810
+                state = 808
+                state = 809
+                state = 190
+                state = 189
+                state = 815
+                state = 11
+                state = 814
+                state = 188
+                state = 763
+                state = 5
+                state = 85
+                state = 807
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = TEU_order 
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            custom_effect_tooltip = "Gains a claim on Gotland"
+            hidden_effect = {
+                811 = { add_core_of = ROOT }
+                812 = { add_core_of = ROOT }
+                813 = { add_core_of = ROOT }
+                13 = { add_core_of = ROOT }
+                191 = { add_core_of = ROOT }
+                12 = { add_core_of = ROOT }
+                810 = { add_core_of = ROOT }
+                808 = { add_core_of = ROOT }
+                809 = { add_core_of = ROOT }
+                190 = { add_core_of = ROOT }
+                189 = { add_core_of = ROOT }
+                815 = { add_core_of = ROOT }
+                11 = { add_core_of = ROOT }
+                814 = { add_core_of = ROOT }
+                188 = { add_core_of = ROOT }
+                763 = { add_core_of = ROOT }
+                5 = { add_core_of = ROOT }
+                85 = { add_core_of = ROOT }
+                807 = { add_core_of = ROOT }
+                124 = { add_claim_by = ROOT }
+            }     
+            hidden_effect = { set_global_flag = form_teutonic_order_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_order_flag}
+
+}
+            set_capital = { state = 763 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+
+    form_north_german_confederation = {
+
+        icon = GFX_german_formable_decision
+
+        allowed = {
+            OR = {
+                original_tag = PRE
+                original_tag = KSH
+                original_tag = SIL
+                original_tag = DDR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = MEK
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = THU
+                original_tag = SAX
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = PRE
+                original_tag = KSH
+                original_tag = SIL
+                original_tag = DDR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = MEK
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = THU
+                original_tag = SAX
+            }
+            NOT = { has_global_flag = form_north_german_confederation_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 188
+                controls_state = 763
+                controls_state = 5
+                controls_state = 85
+                controls_state = 807
+                controls_state = 86
+                controls_state = 762
+                controls_state = 67
+                controls_state = 66
+                controls_state = 63
+                controls_state = 68
+                controls_state = 64
+                controls_state = 62
+                controls_state = 61
+                controls_state = 65
+                controls_state = 60
+                controls_state = 59
+                controls_state = 56
+                controls_state = 58
+                controls_state = 909
+                controls_state = 912
+                controls_state = 57
+                controls_state = 55
+                controls_state = 1027
+                controls_state = 51
+                controls_state = 42
+                controls_state = 1019
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 188
+                state = 763
+                state = 5
+                state = 85
+                state = 807
+                state = 86
+                state = 762
+                state = 67
+                state = 66
+                state = 63
+                state = 68
+                state = 64
+                state = 62
+                state = 61
+                state = 65
+                state = 60
+                state = 59
+                state = 56
+                state = 58
+                state = 909
+                state = 912
+                state = 57
+                state = 55
+                state = 1027
+                state = 51
+                state = 42
+                state = 1019
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = NGC_north_germany
+
+            custom_effect_tooltip =  generic_hl_state_com_tt
+            hidden_effect = {
+                188 = { add_core_of = ROOT }
+                763 = { add_core_of = ROOT }
+                5 = { add_core_of = ROOT }
+                85 = { add_core_of = ROOT }
+                807 = { add_core_of = ROOT }
+                86 = { add_core_of = ROOT }
+                762 = { add_core_of = ROOT }
+                67 = { add_core_of = ROOT }
+                66 = { add_core_of = ROOT }
+                63 = { add_core_of = ROOT }
+                68 = { add_core_of = ROOT }
+                64 = { add_core_of = ROOT }
+                62 = { add_core_of = ROOT }
+                61 = { add_core_of = ROOT }
+                65 = { add_core_of = ROOT }
+                60 = { add_core_of = ROOT }
+                59 = { add_core_of = ROOT }
+                56 = { add_core_of = ROOT }
+                58 = { add_core_of = ROOT }
+                909 = { add_core_of = ROOT }
+                912 = { add_core_of = ROOT }
+                57 = { add_core_of = ROOT }
+                55 = { add_core_of = ROOT }
+                1027 = { add_core_of = ROOT }
+                51 = { add_core_of = ROOT }
+                42 = { add_core_of = ROOT }
+                1019 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_north_german_confederation_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_ngc_flag}
+
+}
+            set_capital = { state = 64 }
+        }
+    }
+}
+
+mittelmeer_formables_category = {
+
+    form_venice = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = LBV
+                original_tag = DAL
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = LBV
+                original_tag = DAL
+            }
+            NOT = { has_global_flag = form_venice_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 850
+                controls_state = 160
+                controls_state = 852
+                controls_state = 163
+                controls_state = 105
+                controls_state = 934
+                controls_state = 44
+                controls_state = 186
+                controls_state = 182
+                controls_state = 103
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 850
+                state = 160
+                state = 852
+                state = 163
+                state = 105
+                state = 934
+                state = 44
+                state = 186
+                state = 182
+                state = 103
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = VEN_trade_empire
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            custom_effect_tooltip = "Gets a claim on Cyprus"
+            hidden_effect = {
+                850 = { add_core_of = ROOT }
+                160 = { add_core_of = ROOT }
+                852 = { add_core_of = ROOT }
+                163 = { add_core_of = ROOT }
+                105 = { add_core_of = ROOT }
+                934 = { add_core_of = ROOT }
+                44 = { add_core_of = ROOT }
+                186 = { add_core_of = ROOT }
+                182 = { add_core_of = ROOT }
+                103 = { add_core_of = ROOT }
+                183 = { add_claim_by = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_venice_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_venice_flag}
+
+}
+            set_capital = { state = 160 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_italy = {
+
+        icon = GFX_decision_category_ITA_colonial_management
+
+        allowed = {
+            OR = {
+                original_tag = TTS
+                original_tag = PAP
+                original_tag = TOS
+                original_tag = LBV
+                original_tag = SPM
+                original_tag = DAL
+                original_tag = COR
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = TTS
+                original_tag = PAP
+                original_tag = TOS
+                original_tag = LBV
+                original_tag = SPM
+                original_tag = DAL
+                original_tag = COR
+            }
+            NOT = { has_global_flag = form_italy_flag }
+        }
+        
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 115
+                controls_state = 156
+                controls_state = 117
+                controls_state = 849
+                controls_state = 157
+                controls_state = 2
+                controls_state = 162
+                controls_state = 161
+                controls_state = 158
+                controls_state = 735
+                controls_state = 159
+                controls_state = 160
+                controls_state = 850
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 115
+                state = 156
+                state = 117
+                state = 849
+                state = 157
+                state = 2
+                state = 162
+                state = 161
+                state = 158
+                state = 735
+                state = 159
+                state = 160
+                state = 850
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = ITA_formable
+            custom_effect_tooltip = generic_hl_state_com_tt
+            custom_effect_tooltip = "Gains a Core on Sardinia"
+            custom_effect_tooltip = "Gains a Core on Corsica"
+            custom_effect_tooltip = "Gains a Claim on Malta"
+
+            hidden_effect = {
+                115 = { add_core_of = ROOT }
+                156 = { add_core_of = ROOT }
+                117 = { add_core_of = ROOT }
+                849 = { add_core_of = ROOT }
+                157 = { add_core_of = ROOT }
+                2 = { add_core_of = ROOT }
+                162 = { add_core_of = ROOT }
+                161 = { add_core_of = ROOT }
+                158 = { add_core_of = ROOT }
+                735 = { add_core_of = ROOT }
+                159 = { add_core_of = ROOT }
+                160 = { add_core_of = ROOT }
+                850 = { add_core_of = ROOT }
+
+                114 = { add_core_of = ROOT }
+                1 = {add_core_of = ROOT }
+
+                116 = { add_claim_by = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_italy_flag } 
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_italy_flag}
+
+}
+            set_capital = { state = 2 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}
+
+arab_formables_category = {
+
+    form_neo_assyria = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = ASY
+                original_tag = IRQ
+                original_tag = KUW
+                original_tag = SYR
+                original_tag = LEB
+                original_tag = ISR
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = ASY
+                original_tag = IRQ
+                original_tag = KUW
+                original_tag = SYR
+                original_tag = LEB
+                original_tag = ISR
+            }
+            NOT = { has_global_flag = form_neo_assyria_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 413
+                controls_state = 421
+                controls_state = 1001
+                controls_state = 656
+                controls_state = 1011
+                controls_state = 291
+                controls_state = 676
+                controls_state = 352
+                controls_state = 680
+                controls_state = 350
+                controls_state = 344
+                controls_state = 799
+                controls_state = 677
+                controls_state = 554
+                controls_state = 553
+                controls_state = 454
+                controls_state = 453
+                controls_state = 446
+                controls_state = 907
+                controls_state = 447
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 413
+                state = 421
+                state = 1001
+                state = 656
+                state = 1011
+                state = 291
+                state = 676
+                state = 352
+                state = 680
+                state = 350
+                state = 344
+                state = 799
+                state = 677
+                state = 554
+                state = 553
+                state = 454
+                state = 453
+                state = 446
+                state = 907
+                state = 447
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = NEO_assyria
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                413 = { add_core_of = ROOT }
+                421 = { add_core_of = ROOT }
+                1001 = { add_core_of = ROOT }
+                656 = { add_core_of = ROOT }
+                1011 = { add_core_of = ROOT }
+                291 = { add_core_of = ROOT }
+                676 = { add_core_of = ROOT }
+                352 = { add_core_of = ROOT }
+                680 = { add_core_of = ROOT }
+                350 = { add_core_of = ROOT }
+                344 = { add_core_of = ROOT }
+                799 = { add_core_of = ROOT }
+                677 = { add_core_of = ROOT }
+                554 = { add_core_of = ROOT }
+                553 = { add_core_of = ROOT }
+                454 = { add_core_of = ROOT }
+                453 = { add_core_of = ROOT }
+                446 = { add_core_of = ROOT }
+                907 = { add_core_of = ROOT }
+                447 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_neo_assyria }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_syria_flag}
+
+}
+            set_capital = { state = 676 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+}
+
+north_america_formables_category = {
+
+    form_greater_cascadia = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            original_tag = UCC
+        }
+
+        visible = {
+            original_tag = UCC
+            NOT = { has_global_flag = form_greater_cascadia_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 385
+                controls_state = 386
+                controls_state = 387
+                controls_state = 473
+                controls_state = 740
+                controls_state = 471
+                controls_state = 739
+                controls_state = 864
+                controls_state = 463
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 385
+                state = 386
+                state = 387
+                state = 473
+                state = 740
+                state = 471
+                state = 739
+                state = 864
+                state = 463
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GCC_cascadia
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                385 = { add_core_of = ROOT }
+                386 = { add_core_of = ROOT }
+                387 = { add_core_of = ROOT }
+                473 = { add_core_of = ROOT }
+                740 = { add_core_of = ROOT }
+                471 = { add_core_of = ROOT }
+                739 = { add_core_of = ROOT }
+                864 = { add_core_of = ROOT }
+                463 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_greater_cascadia_flag }
+			hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_cascadia_flag}
+
+}
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_pacific_states = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UCL
+                original_tag = UCC
+                original_tag = UNZ
+                original_tag = UHC
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UCL
+                original_tag = UCC
+                original_tag = UNZ
+                original_tag = UHC
+            }
+            NOT = { has_global_flag = form_pacific_staes_flag}
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 378
+                controls_state = 385
+                controls_state = 386
+                controls_state = 379
+                controls_state = 380
+                controls_state = 377
+                controls_state = 376
+                controls_state = 382
+                controls_state = 387
+                controls_state = 388
+                controls_state = 381
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 378
+                state = 385
+                state = 386
+                state = 379
+                state = 380
+                state = 377
+                state = 376
+                state = 382
+                state = 387
+                state = 388
+                state = 381
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = USA_pacific_states
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                378 = { add_core_of = ROOT }
+                385 = { add_core_of = ROOT }
+                386 = { add_core_of = ROOT }
+                379 = { add_core_of = ROOT }
+                380 = { add_core_of = ROOT }
+                377 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                382 = { add_core_of = ROOT }
+                387 = { add_core_of = ROOT }
+                388 = { add_core_of = ROOT }
+                381 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_pacific_staes_flag }
+            			hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_west_usa_flag}
+
+}
+            set_capital = { state = 378 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_atlantic_states = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UHC
+                original_tag = UTX
+                original_tag = UPF
+                original_tag = CSA
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UFL
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UHC
+                original_tag = UTX
+                original_tag = UPF
+                original_tag = CSA
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UFL
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+            NOT = { has_global_flag = form_atlantic_states_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 389
+                controls_state = 390
+                controls_state = 384
+                controls_state = 383
+                controls_state = 374
+                controls_state = 375
+                controls_state = 391
+                controls_state = 392
+                controls_state = 373
+                controls_state = 395
+                controls_state = 394
+                controls_state = 372
+                controls_state = 371
+                controls_state = 370
+                controls_state = 367
+                controls_state = 368
+                controls_state = 366
+                controls_state = 365
+                controls_state = 364
+                controls_state = 363
+                controls_state = 369
+                controls_state = 396
+                controls_state = 261
+                controls_state = 393
+                controls_state = 362
+                controls_state = 816
+                controls_state = 361
+                controls_state = 360
+                controls_state = 359
+                controls_state = 358
+                controls_state = 357
+                controls_state = 1021
+                controls_state = 1022
+                controls_state = 1023
+                controls_state = 1024
+                controls_state = 1028
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 389
+                state = 390
+                state = 384
+                state = 383
+                state = 374
+                state = 375
+                state = 391
+                state = 392
+                state = 373
+                state = 395
+                state = 394
+                state = 372
+                state = 371
+                state = 370
+                state = 367
+                state = 368
+                state = 366
+                state = 365
+                state = 364
+                state = 363
+                state = 369
+                state = 396
+                state = 261
+                state = 393
+                state = 362
+                state = 816
+                state = 361
+                state = 360
+                state = 359
+                state = 358
+                state = 357
+                state = 1021
+                state = 1022
+                state = 1023
+                state = 1024
+                state = 1028
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = USA_atlantic_states
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                389 = { add_core_of = ROOT }
+                390 = { add_core_of = ROOT }
+                384 = { add_core_of = ROOT }
+                383 = { add_core_of = ROOT }
+                374 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                391 = { add_core_of = ROOT }
+                392 = { add_core_of = ROOT }
+                373 = { add_core_of = ROOT }
+                395 = { add_core_of = ROOT }
+                394 = { add_core_of = ROOT }
+                372 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                368 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                369 = { add_core_of = ROOT }
+                396 = { add_core_of = ROOT }
+                261 = { add_core_of = ROOT }
+                393 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+                816 = { add_core_of = ROOT }
+                361 = { add_core_of = ROOT }
+                360 = { add_core_of = ROOT }
+                359 = { add_core_of = ROOT }
+                358 = { add_core_of = ROOT }
+                357 = { add_core_of = ROOT }
+                1021 = { add_core_of = ROOT }
+                1022 = { add_core_of = ROOT }
+                1023 = { add_core_of = ROOT }
+                1024 = { add_core_of = ROOT }
+                1028 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_atlantic_states_flag }
+            			hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_east_usa_flag}
+
+}
+            set_capital = { state = 361 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_whole_usa = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UHC
+                original_tag = UTX
+                original_tag = UPF
+                original_tag = CSA
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UFL
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+                original_tag = UCL
+                original_tag = UCC
+                original_tag = UNZ
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UHC
+                original_tag = UTX
+                original_tag = UPF
+                original_tag = CSA
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UFL
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+                original_tag = UCL
+                original_tag = UCC
+                original_tag = UNZ
+            }
+            NOT = { has_global_flag = form_whole_usa_flag }
+        }
+        
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 378
+                controls_state = 385
+                controls_state = 386
+                controls_state = 379
+                controls_state = 380
+                controls_state = 377
+                controls_state = 376
+                controls_state = 382
+                controls_state = 387
+                controls_state = 388
+                controls_state = 381
+                controls_state = 389
+                controls_state = 390
+                controls_state = 384
+                controls_state = 383
+                controls_state = 374
+                controls_state = 375
+                controls_state = 391
+                controls_state = 392
+                controls_state = 373
+                controls_state = 395
+                controls_state = 394
+                controls_state = 372
+                controls_state = 371
+                controls_state = 370
+                controls_state = 367
+                controls_state = 368
+                controls_state = 366
+                controls_state = 365
+                controls_state = 364
+                controls_state = 363
+                controls_state = 369
+                controls_state = 396
+                controls_state = 261
+                controls_state = 393
+                controls_state = 362
+                controls_state = 816
+                controls_state = 361
+                controls_state = 360
+                controls_state = 359
+                controls_state = 358
+                controls_state = 357
+                controls_state = 1021
+                controls_state = 1022
+                controls_state = 1023
+                controls_state = 1024
+                controls_state = 1028
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 378
+                state = 385
+                state = 386
+                state = 379
+                state = 380
+                state = 377
+                state = 376
+                state = 382
+                state = 387
+                state = 388
+                state = 381
+                state = 389
+                state = 390
+                state = 384
+                state = 383
+                state = 374
+                state = 375
+                state = 391
+                state = 392
+                state = 373
+                state = 395
+                state = 394
+                state = 372
+                state = 371
+                state = 370
+                state = 367
+                state = 368
+                state = 366
+                state = 365
+                state = 364
+                state = 363
+                state = 369
+                state = 396
+                state = 261
+                state = 393
+                state = 362
+                state = 816
+                state = 361
+                state = 360
+                state = 359
+                state = 358
+                state = 357
+                state = 1021
+                state = 1022
+                state = 1023
+                state = 1024
+                state = 1028
+            }
+        }
+
+        complete_effect = {
+
+            set_cosmetic_tag = USA_whole_reformed
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                389 = { add_core_of = ROOT }
+                390 = { add_core_of = ROOT }
+                384 = { add_core_of = ROOT }
+                383 = { add_core_of = ROOT }
+                374 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                391 = { add_core_of = ROOT }
+                392 = { add_core_of = ROOT }
+                373 = { add_core_of = ROOT }
+                395 = { add_core_of = ROOT }
+                394 = { add_core_of = ROOT }
+                372 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                368 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                369 = { add_core_of = ROOT }
+                396 = { add_core_of = ROOT }
+                261 = { add_core_of = ROOT }
+                393 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+                816 = { add_core_of = ROOT }
+                361 = { add_core_of = ROOT }
+                360 = { add_core_of = ROOT }
+                359 = { add_core_of = ROOT }
+                358 = { add_core_of = ROOT }
+                357 = { add_core_of = ROOT }
+                1021 = { add_core_of = ROOT }
+                1022 = { add_core_of = ROOT }
+                1023 = { add_core_of = ROOT }
+                1024 = { add_core_of = ROOT }
+                1028 = { add_core_of = ROOT }
+                378 = { add_core_of = ROOT }
+                385 = { add_core_of = ROOT }
+                386 = { add_core_of = ROOT }
+                379 = { add_core_of = ROOT }
+                380 = { add_core_of = ROOT }
+                377 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                382 = { add_core_of = ROOT }
+                387 = { add_core_of = ROOT }
+                388 = { add_core_of = ROOT }
+                381 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_whole_usa_flag }
+						hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_whole_usa_flag}
+
+}
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_greater_texas = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UTX
+                original_tag = RIG
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UTX
+                original_tag = RIG
+            }
+            NOT = { has_global_flag = form_greater_texas_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 382
+                controls_state = 376
+                controls_state = 374
+                controls_state = 375
+                controls_state = 480
+                controls_state = 479
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 382
+                state = 376
+                state = 374
+                state = 375
+                state = 480
+                state = 479
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GTX_texas
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                382 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                374 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                480 = { add_core_of = ROOT }
+                479 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_greater_texas_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_texas_flag}
+
+}
+            set_capital = { state = 375 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_greater_california = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            original_tag = UCL
+        }
+
+        visible = {
+            original_tag = UCL
+            NOT = { has_global_flag = form_greater_california_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 378
+                controls_state = 484
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 378
+                state = 484
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GCL_california
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                378 = { add_core_of = ROOT }
+                484 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_greater_california_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_california_flag}
+
+}
+            set_capital = { state = 378 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_confederacy = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+            NOT = { has_global_flag = form_confederacy_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 375
+                controls_state = 372
+                controls_state = 371
+                controls_state = 370
+                controls_state = 367
+                controls_state = 368
+                controls_state = 366
+                controls_state = 365
+                controls_state = 364
+                controls_state = 363
+                controls_state = 362
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 375
+                state = 372
+                state = 371
+                state = 370
+                state = 367
+                state = 368
+                state = 366
+                state = 365
+                state = 364
+                state = 363
+                state = 362
+            }
+        }
+
+        complete_effect =  {
+            set_cosmetic_tag = CFS_confederacy
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                375 = { add_core_of = ROOT }
+                372 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                368 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+            }
+            hidden_effect = { 
+                set_global_flag = form_confederacy_flag 
+                set_country_flag = form_confederacy_flag_country
+            }
+			hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_csa_flag}
+
+}
+            set_capital = { state = 371 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    expand_confederacy = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+            NOT = { has_global_flag = expand_confederacy_flag }
+            has_country_flag = form_confederacy_flag_country
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 377
+                controls_state = 376
+                controls_state = 374
+                controls_state = 373
+                controls_state = 369
+                controls_state = 816
+                controls_state = 375
+                controls_state = 372
+                controls_state = 371
+                controls_state = 370
+                controls_state = 367
+                controls_state = 368
+                controls_state = 366
+                controls_state = 365
+                controls_state = 364
+                controls_state = 363
+                controls_state = 362
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 377
+                state = 376
+                state = 374
+                state = 373
+                state = 369
+                state = 816
+                state = 375
+                state = 372
+                state = 371
+                state = 370
+                state = 367
+                state = 368
+                state = 366
+                state = 365
+                state = 364
+                state = 363
+                state = 362
+            }
+        }
+
+        complete_effect = {
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                377 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                374 = { add_core_of = ROOT }
+                373 = { add_core_of = ROOT }
+                369 = { add_core_of = ROOT }
+                816 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                372 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                368 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+            }
+            hidden_effect = {
+                set_global_flag = expand_confederacy_flag
+                set_country_flag = expand_confederacy_flag_country
+            }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_golden_circle = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+            NOT = { has_global_flag = form_golden_circle_flag }
+            has_country_flag = expand_confederacy_flag_country
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 377
+                controls_state = 376
+                controls_state = 374
+                controls_state = 373
+                controls_state = 369
+                controls_state = 816
+                controls_state = 375
+                controls_state = 372
+                controls_state = 371
+                controls_state = 370
+                controls_state = 367
+                controls_state = 368
+                controls_state = 366
+                controls_state = 365
+                controls_state = 364
+                controls_state = 363
+                controls_state = 362
+                controls_state = 361
+                controls_state = 484
+                controls_state = 483
+                controls_state = 482
+                controls_state = 481
+                controls_state = 478
+                controls_state = 485
+                controls_state = 277
+                controls_state = 477
+                controls_state = 480
+                controls_state = 479
+                controls_state = 476
+                controls_state = 475
+                controls_state = 313
+                controls_state = 474
+                controls_state = 311
+                controls_state = 314
+                controls_state = 312
+                controls_state = 317
+                controls_state = 316
+                controls_state = 304
+                controls_state = 685
+                controls_state = 493
+                controls_state = 489
+                controls_state = 307
+                controls_state = 695
+                controls_state = 691
+                controls_state = 692
+                controls_state = 694
+                controls_state = 308
+                controls_state = 686
+                controls_state = 319
+                controls_state = 318
+                controls_state = 689
+                controls_state = 315
+                controls_state = 693
+                controls_state = 690
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 377
+                state = 376
+                state = 374
+                state = 373
+                state = 369
+                state = 816
+                state = 375
+                state = 372
+                state = 371
+                state = 370
+                state = 367
+                state = 368
+                state = 366
+                state = 365
+                state = 364
+                state = 363
+                state = 362
+                state = 361
+                state = 484
+                state = 483
+                state = 482
+                state = 481
+                state = 478
+                state = 485
+                state = 277
+                state = 477
+                state = 480
+                state = 479
+                state = 476
+                state = 475
+                state = 313
+                state = 474
+                state = 311
+                state = 314
+                state = 312
+                state = 317
+                state = 316
+                state = 304
+                state = 685
+                state = 493
+                state = 489
+                state = 307
+                state = 695
+                state = 691
+                state = 692
+                state = 694
+                state = 308
+                state = 686
+                state = 319
+                state = 318
+                state = 689
+                state = 315
+                state = 693
+                state = 690
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GCR_golden_circle
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                377 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                374 = { add_core_of = ROOT }
+                373 = { add_core_of = ROOT }
+                369 = { add_core_of = ROOT }
+                816 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                372 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                368 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+                361 = { add_core_of = ROOT }
+                484 = { add_core_of = ROOT }
+                483 = { add_core_of = ROOT }
+                482 = { add_core_of = ROOT }
+                481 = { add_core_of = ROOT }
+                478 = { add_core_of = ROOT }
+                485 = { add_core_of = ROOT }
+                277 = { add_core_of = ROOT }
+                477 = { add_core_of = ROOT }
+                480 = { add_core_of = ROOT }
+                479 = { add_core_of = ROOT }
+                476 = { add_core_of = ROOT }
+                475 = { add_core_of = ROOT }
+                313 = { add_core_of = ROOT }
+                474 = { add_core_of = ROOT }
+                311 = { add_core_of = ROOT }
+                314 = { add_core_of = ROOT }
+                312 = { add_core_of = ROOT }
+                317 = { add_core_of = ROOT }
+                316 = { add_core_of = ROOT }
+                304 = { add_core_of = ROOT }
+                685 = { add_core_of = ROOT }
+                493 = { add_core_of = ROOT }
+                489 = { add_core_of = ROOT }
+                307 = { add_core_of = ROOT }
+                695 = { add_core_of = ROOT }
+                691 = { add_core_of = ROOT }
+                692 = { add_core_of = ROOT }
+                694 = { add_core_of = ROOT }
+                308 = { add_core_of = ROOT }
+                686 = { add_core_of = ROOT }
+                319 = { add_core_of = ROOT }
+                318 = { add_core_of = ROOT }
+                689 = { add_core_of = ROOT }
+                315 = { add_core_of = ROOT }
+                693 = { add_core_of = ROOT }
+                690 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_golden_circle_flag }
+						hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_golden_circle_flag}
+
+}
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_thirteen_colonies = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+            NOT = { has_global_flag = form_thirteen_colonies_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 357
+                controls_state = 358
+                controls_state = 359
+                controls_state = 360
+                controls_state = 361
+                controls_state = 362
+                controls_state = 363
+                controls_state = 364
+                controls_state = 365
+                controls_state = 1021
+                controls_state = 1022
+                controls_state = 1023
+                controls_state = 1024
+                controls_state = 1028
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 357
+                state = 358
+                state = 359
+                state = 360
+                state = 361
+                state = 362
+                state = 363
+                state = 364
+                state = 365
+                state = 1021
+                state = 1022
+                state = 1023
+                state = 1024
+                state = 1028
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = TTC_colonies
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                357 = { add_core_of = ROOT }
+                358 = { add_core_of = ROOT }
+                359 = { add_core_of = ROOT }
+                360 = { add_core_of = ROOT }
+                361 = { add_core_of = ROOT }
+                362 = { add_core_of = ROOT }
+                363 = { add_core_of = ROOT }
+                364 = { add_core_of = ROOT }
+                365 = { add_core_of = ROOT }
+                1021 = { add_core_of = ROOT }
+                1022 = { add_core_of = ROOT }
+                1023 = { add_core_of = ROOT }
+                1024 = { add_core_of = ROOT }
+                1028 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_thirteen_colonies_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_13_col_flag}
+
+}
+            set_capital = { state = 360 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    expand_thirteen_colonies = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+            NOT = { has_global_flag = expland_thirteen_colonies_flag }
+            has_cosmetic_tag = TTC_colonies
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 366
+                controls_state = 816
+                controls_state = 261
+                controls_state = 276
+                controls_state = 468
+                controls_state = 465
+                controls_state = 464
+                controls_state = 1021
+                controls_state = 1022
+                controls_state = 1023
+                controls_state = 1024
+                controls_state = 1028
+                controls_state = 357
+                controls_state = 358
+                controls_state = 359
+                controls_state = 360
+                controls_state = 361
+                controls_state = 362
+                controls_state = 363
+                controls_state = 364
+                controls_state = 365
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 366
+                state = 816
+                state = 261
+                state = 276
+                state = 468
+                state = 465
+                state = 464
+                state = 1021
+                state = 1022
+                state = 1023
+                state = 1024
+                state = 1028
+                state = 357
+                state = 358
+                state = 359
+                state = 360
+                state = 361
+                state = 362
+                state = 363
+                state = 364
+                state = 365
+            }
+        }
+
+        complete_effect = {
+
+            set_cosmetic_tag = TTC_colonies_expanded
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                366 = { add_core_of = ROOT }
+                816 = { add_core_of = ROOT }
+                261 = { add_core_of = ROOT }
+                276 = { add_core_of = ROOT }
+                468 = { add_core_of = ROOT }
+                465 = { add_core_of = ROOT }
+                464 = { add_core_of = ROOT }
+                1021 = { add_core_of = ROOT }
+                1022 = { add_core_of = ROOT }
+                1023 = { add_core_of = ROOT }
+                1024 = { add_core_of = ROOT }
+                1028 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = expland_thirteen_colonies_flag }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_sunshine_empire = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UFL
+                original_tag = CSA
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UFL
+                original_tag = CSA
+            }
+            NOT = { has_global_flag = form_sunshine_empire_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 366
+                controls_state = 690
+                controls_state = 693
+                controls_state = 315
+                controls_state = 689
+                controls_state = 474
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 366
+                state = 690
+                state = 693
+                state = 315
+                state = 689
+                state = 474
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = SUN_shine_empire
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                366 = { add_core_of = ROOT }
+                690 = { add_core_of = ROOT }
+                693 = { add_core_of = ROOT }
+                315 = { add_core_of = ROOT }
+                689 = { add_core_of = ROOT }
+                474 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_sunshine_empire_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_sunshine_empire_flag}
+
+}
+            set_capital = { state = 366 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_mexican_gulf_empire = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UFL
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = RIG
+                original_tag = MEX
+                original_tag = MAY
+                original_tag = YUC 
+                original_tag = ITZ
+                original_tag = CUB
+                original_tag = JAM
+                original_tag = BAH
+            }
+        }
+
+        visible = {
+           OR = {
+                original_tag = UFL
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = RIG
+                original_tag = MEX
+                original_tag = MAY
+                original_tag = YUC 
+                original_tag = ITZ
+                original_tag = CUB
+                original_tag = JAM
+                original_tag = BAH
+            }
+            NOT = { has_global_flag = form_mexican_gulf_empire_flag } 
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 365
+                controls_state = 366
+                controls_state = 367
+                controls_state = 370
+                controls_state = 371
+                controls_state = 375
+                controls_state = 277
+                controls_state = 311
+                controls_state = 313
+                controls_state = 315
+                controls_state = 474
+                controls_state = 475
+                controls_state = 476
+                controls_state = 477
+                controls_state = 479
+                controls_state = 480
+                controls_state = 689
+                controls_state = 690
+                controls_state = 693
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 365
+                state = 366
+                state = 367
+                state = 370
+                state = 371
+                state = 375
+                state = 277
+                state = 311
+                state = 313
+                state = 315
+                state = 474
+                state = 475
+                state = 476
+                state = 477
+                state = 479
+                state = 480
+                state = 689
+                state = 690
+                state = 693
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GOM_mexican_gulf
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                365 = { add_core_of = ROOT }
+                366 = { add_core_of = ROOT }
+                367 = { add_core_of = ROOT }
+                370 = { add_core_of = ROOT }
+                371 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                277 = { add_core_of = ROOT }
+                311 = { add_core_of = ROOT }
+                313 = { add_core_of = ROOT }
+                315 = { add_core_of = ROOT }
+                474 = { add_core_of = ROOT }
+                475 = { add_core_of = ROOT }
+                476 = { add_core_of = ROOT }
+                477 = { add_core_of = ROOT }
+                479 = { add_core_of = ROOT }
+                480 = { add_core_of = ROOT }
+                689 = { add_core_of = ROOT }
+                690 = { add_core_of = ROOT }
+                693 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_mexican_gulf_empire_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_gulf_empire_flag}
+
+}
+            set_capital = { state = 371 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_old_mexico = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UCL
+                original_tag = UNZ
+                original_tag = UTX
+                original_tag = MEX
+                original_tag = RIG
+                original_tag = MAY
+                original_tag = YUC
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UCL
+                original_tag = UNZ
+                original_tag = UTX
+                original_tag = MEX
+                original_tag = RIG
+                original_tag = MAY
+                original_tag = YUC
+            }
+            NOT = { has_global_flag = form_old_mexico_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 474
+                controls_state = 475
+                controls_state = 476
+                controls_state = 477
+                controls_state = 277
+                controls_state = 485
+                controls_state = 478
+                controls_state = 481
+                controls_state = 482
+                controls_state = 483
+                controls_state = 484
+                controls_state = 479
+                controls_state = 480
+                controls_state = 375
+                controls_state = 376
+                controls_state = 377
+                controls_state = 382
+                controls_state = 380
+                controls_state = 379
+                controls_state = 378
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 474
+                state = 475
+                state = 476
+                state = 477
+                state = 277
+                state = 485
+                state = 478
+                state = 481
+                state = 482
+                state = 483
+                state = 484
+                state = 479
+                state = 480
+                state = 375
+                state = 376
+                state = 377
+                state = 382
+                state = 380
+                state = 379
+                state = 378
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = OMX_old_mexico
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                474 = { add_core_of = ROOT }
+                475 = { add_core_of = ROOT }
+                476 = { add_core_of = ROOT }
+                477 = { add_core_of = ROOT }
+                277 = { add_core_of = ROOT }
+                485 = { add_core_of = ROOT }
+                478 = { add_core_of = ROOT }
+                481 = { add_core_of = ROOT }
+                482 = { add_core_of = ROOT }
+                483 = { add_core_of = ROOT }
+                484 = { add_core_of = ROOT }
+                479 = { add_core_of = ROOT }
+                480 = { add_core_of = ROOT }
+                375 = { add_core_of = ROOT }
+                376 = { add_core_of = ROOT }
+                377 = { add_core_of = ROOT }
+                382 = { add_core_of = ROOT }
+                380 = { add_core_of = ROOT }
+                379 = { add_core_of = ROOT }
+                378 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_old_mexico_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_mexico_flag}
+
+}
+            set_capital = { state = 277 }
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+
+    form_great_lakes = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = UPF
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UPS
+                original_tag = UNY
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = UPF
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UPS
+                original_tag = UNY
+            }
+            NOT = { has_global_flag = form_great_lakes_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 261
+                controls_state = 396
+                controls_state = 393
+                controls_state = 395
+                controls_state = 394
+                controls_state = 391
+                controls_state = 682
+                controls_state = 276
+                controls_state = 358
+                controls_state = 360
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 261
+                state = 396
+                state = 393
+                state = 395
+                state = 394
+                state = 391
+                state = 682
+                state = 276
+                state = 358
+                state = 360
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GRL_great_lakes
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                261 = { add_core_of = ROOT }
+                396 = { add_core_of = ROOT }
+                393 = { add_core_of = ROOT }
+                395 = { add_core_of = ROOT }
+                394 = { add_core_of = ROOT }
+                391 = { add_core_of = ROOT }
+                682 = { add_core_of = ROOT }
+                276 = { add_core_of = ROOT }
+                358 = { add_core_of = ROOT }
+                360 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_great_lakes_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_great_lakes_flag}
+
+}
+            set_capital = { state = 393}
+        }
+
+        ai_will_do = { base = 1000 }
+    }
+}
+
+misc_european_formables_category = {
+
+    form_greater_finland = {
+
+        allowed = {
+            OR = {
+                original_tag = TAV
+                original_tag = SAV
+                original_tag = OST
+                original_tag = LAP
+                original_tag = KAR
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = TAV
+                original_tag = SAV
+                original_tag = OST
+                original_tag = LAP
+                original_tag = KAR
+            }
+            NOT = { has_global_flag = form_greater_finland_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 145
+                controls_state = 111
+                controls_state = 926
+                controls_state = 927
+                controls_state = 930
+                controls_state = 150
+                controls_state = 149
+                controls_state = 929
+                controls_state = 148
+                controls_state = 722
+                controls_state = 147
+                controls_state = 213
+                controls_state = 215
+                controls_state = 216
+                controls_state = 146
+                controls_state = 928
+                controls_state = 925
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 145
+                state = 111
+                state = 926
+                state = 927
+                state = 930
+                state = 150
+                state = 149
+                state = 929
+                state = 148
+                state = 722
+                state = 147
+                state = 213
+                state = 215
+                state = 216
+                state = 146
+                state = 928
+                state = 925
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GFL_finland
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                145 = { add_core_of = ROOT }
+                111 = { add_core_of = ROOT }
+                926 = { add_core_of = ROOT }
+                927 = { add_core_of = ROOT }
+                930 = { add_core_of = ROOT }
+                150 = { add_core_of = ROOT }
+                149 = { add_core_of = ROOT }
+                929 = { add_core_of = ROOT }
+                148 = { add_core_of = ROOT }
+                722 = { add_core_of = ROOT }
+                147 = { add_core_of = ROOT }
+                213 = { add_core_of = ROOT }
+                215 = { add_core_of = ROOT }
+                216 = { add_core_of = ROOT }
+                146 = { add_core_of = ROOT }
+                928 = { add_core_of = ROOT }
+                925 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_greater_finland_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_finland_flag}
+
+}
+            set_capital = { state = 111 }
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+    }
+
+    form_penis_albania = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = ALB 
+                original_tag = MNT 
+                original_tag = KOS
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = ALB 
+                original_tag = MNT 
+                original_tag = KOS
+            }
+            NOT = { has_global_flag = form_penis_albania_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 105
+                controls_state = 802
+                controls_state = 934
+                controls_state = 44
+                controls_state = 805
+                controls_state = 970
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 105
+                state = 802
+                state = 934
+                state = 44
+                state = 805
+                state = 970
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = GAL_greater_albania
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                105 = { add_core_of = ROOT }
+                802 = { add_core_of = ROOT }
+                934 = { add_core_of = ROOT }
+                44 = { add_core_of = ROOT }
+                805 = { add_core_of = ROOT }
+                970 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_penis_albania_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_albania_flag}
+
+}
+            set_capital = { state = 44 }
+        }
+    }
+}
+
+indian_formables_category = {
+
+    form_bharat = {
+        
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = RAS
+                original_tag = MYS 
+                original_tag = KOL
+                original_tag = HYD
+                original_tag = RAJ
+                original_tag = CIP
+                original_tag = WIS
+                original_tag = RJP
+                original_tag = KHL
+                original_tag = KAS
+                original_tag = SKK
+                original_tag = MPU
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = RAS
+                original_tag = MYS 
+                original_tag = KOL
+                original_tag = HYD
+                original_tag = RAJ
+                original_tag = CIP
+                original_tag = WIS
+                original_tag = RJP
+                original_tag = KHL
+                original_tag = KAS
+                original_tag = SKK
+                original_tag = MPU
+            }
+            NOT = { has_global_flag = form_bharat_flag }
+        }
+        
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 423
+                controls_state = 424
+                controls_state = 426
+                controls_state = 984
+                controls_state = 436
+                controls_state = 429
+                controls_state = 435
+                controls_state = 431
+                controls_state = 432
+                controls_state = 434
+                controls_state = 438
+                controls_state = 439
+                controls_state = 982
+                controls_state = 320
+                controls_state = 425
+                controls_state = 321
+                controls_state = 983
+                controls_state = 427
+                controls_state = 437
+                controls_state = 991
+                controls_state = 428
+                controls_state = 433
+                controls_state = 989
+                controls_state = 440
+                controls_state = 986
+                controls_state = 441
+                controls_state = 787
+                controls_state = 985
+                controls_state = 990
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 423
+                state = 424
+                state = 426
+                state = 984
+                state = 436
+                state = 429
+                state = 435
+                state = 431
+                state = 432
+                state = 434
+                state = 438
+                state = 439
+                state = 982
+                state = 320
+                state = 425
+                state = 321
+                state = 983
+                state = 427
+                state = 437
+                state = 991
+                state = 428
+                state = 433
+                state = 989
+                state = 440
+                state = 986
+                state = 441
+                state = 787
+                state = 985
+                state = 990
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = BHR_bharat
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                423 = { add_core_of = ROOT }
+                424 = { add_core_of = ROOT }
+                426 = { add_core_of = ROOT }
+                984 = { add_core_of = ROOT }
+                436 = { add_core_of = ROOT }
+                429 = { add_core_of = ROOT }
+                435 = { add_core_of = ROOT }
+                431 = { add_core_of = ROOT }
+                432 = { add_core_of = ROOT }
+                434 = { add_core_of = ROOT }
+                438 = { add_core_of = ROOT }
+                439 = { add_core_of = ROOT }
+                982 = { add_core_of = ROOT }
+                320 = { add_core_of = ROOT }
+                425 = { add_core_of = ROOT }
+                321 = { add_core_of = ROOT }
+                983 = { add_core_of = ROOT }
+                427 = { add_core_of = ROOT }
+                437 = { add_core_of = ROOT }
+                991 = { add_core_of = ROOT }
+                428 = { add_core_of = ROOT }
+                433 = { add_core_of = ROOT }
+                989 = { add_core_of = ROOT }
+                440 = { add_core_of = ROOT }
+                986 = { add_core_of = ROOT }
+                441 = { add_core_of = ROOT }
+                787 = { add_core_of = ROOT }
+                985 = { add_core_of = ROOT }
+                990 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_bharat_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_bharat_flag}
+
+}
+            set_capital = { state = 439 }
+        }
+    }
+
+    form_hindustan = {
+
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            OR = {
+                original_tag = KHL
+                original_tag = RJP
+                original_tag = CIP
+                original_tag = RAJ
+                original_tag = NEP
+                original_tag = SKK
+                original_tag = BHU
+                original_tag = BAN
+                original_tag = MPU
+            }
+        }
+
+        visible = {
+            OR = {
+                original_tag = KHL
+                original_tag = RJP
+                original_tag = CIP
+                original_tag = RAJ
+                original_tag = NEP
+                original_tag = SKK
+                original_tag = BHU
+                original_tag = BAN
+                original_tag = MPU
+            }
+            NOT = { has_global_flag = form_hindustan_flag }
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = generic_hl_state_req_tt
+                controls_state = 440
+                controls_state = 986
+                controls_state = 989
+                controls_state = 433
+                controls_state = 991
+                controls_state = 437
+                controls_state = 439
+                controls_state = 438
+                controls_state = 436
+                controls_state = 984
+                controls_state = 435
+                controls_state = 431
+                controls_state = 432
+                controls_state = 434
+                controls_state = 323
+                controls_state = 985
+                controls_state = 324
+                controls_state = 430
+                controls_state = 990
+                controls_state = 997
+                controls_state = 996
+            }
+        }
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 440
+                state = 986
+                state = 989
+                state = 433
+                state = 991
+                state = 437
+                state = 439
+                state = 438
+                state = 436
+                state = 984
+                state = 435
+                state = 431
+                state = 432
+                state = 434
+                state = 323
+                state = 985
+                state = 324
+                state = 430
+                state = 990
+                state = 997
+                state = 996
+            }
+        }
+
+        complete_effect = {
+            set_cosmetic_tag = HND_hindustan
+
+            custom_effect_tooltip = generic_hl_state_com_tt
+            hidden_effect = {
+                440 = { add_core_of = ROOT }
+                986 = { add_core_of = ROOT }
+                989 = { add_core_of = ROOT }
+                433 = { add_core_of = ROOT }
+                991 = { add_core_of = ROOT }
+                437 = { add_core_of = ROOT }
+                439 = { add_core_of = ROOT }
+                438 = { add_core_of = ROOT }
+                436 = { add_core_of = ROOT }
+                984 = { add_core_of = ROOT }
+                435 = { add_core_of = ROOT }
+                431 = { add_core_of = ROOT }
+                432 = { add_core_of = ROOT }
+                434 = { add_core_of = ROOT }
+                323 = { add_core_of = ROOT }
+                985 = { add_core_of = ROOT }
+                324 = { add_core_of = ROOT }
+                430 = { add_core_of = ROOT }
+                990 = { add_core_of = ROOT }
+                997 = { add_core_of = ROOT }
+                996 = { add_core_of = ROOT }
+            }
+            hidden_effect = { set_global_flag = form_hindustan_flag }
+hidden_effect = {  
+ if = {limit = {is_ai = no } set_country_flag = HOS_form_hindustan_flag}
+
+}
+            set_capital = { state = 439 }
+        }
+    }
+}

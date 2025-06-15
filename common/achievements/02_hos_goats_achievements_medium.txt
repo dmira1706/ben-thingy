@@ -1,0 +1,256 @@
+
+
+unique_id = hos_goats_medium_achievements
+
+
+#############################
+
+HOS_form_italy = {
+
+possible = {
+OR = {
+original_tag = TTS
+                original_tag = PAP
+                original_tag = TOS
+                original_tag = LBV
+                original_tag = SPM
+                original_tag = DAL
+                original_tag = COR
+}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_italy_flag
+}
+
+
+
+
+}
+HOS_form_venice = {
+
+possible = {
+OR = {
+original_tag = TTS
+                original_tag = LBV
+                original_tag = DAL
+}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_venice_flag
+}
+
+
+
+
+}
+HOS_form_syria = {
+
+possible = {
+        OR = {
+                original_tag = ASY
+                original_tag = IRQ
+                original_tag = KUW
+                original_tag = SYR
+                original_tag = LEB
+                original_tag = ISR
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_syria_flag
+}
+
+
+
+
+}
+HOS_form_order = {
+
+possible = {
+        OR = {
+          original_tag = EST
+                original_tag = LAT
+                original_tag = LIT
+                original_tag = PRE
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_order_flag
+}
+
+
+
+
+}
+
+HOS_form_ngc = {
+
+possible = {
+        OR = {
+                original_tag = PRE
+                original_tag = KSH
+                original_tag = SIL
+                original_tag = DDR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = MEK
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = THU
+                original_tag = SAX
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_ngc_flag
+}
+
+
+
+
+}
+
+HOS_form_13_col = {
+
+possible = {
+         OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_13_col_flag
+}
+
+
+
+
+}
+HOS_form_cascadia = {
+
+possible = {
+    original_tag = UCC
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_cascadia_flag
+}
+
+
+
+
+}
+
+HOS_form_great_lakes = {
+
+possible = {
+OR = {
+       original_tag = UPF
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UPS
+                original_tag = UNY
+				}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_great_lakes_flag
+}
+
+
+
+
+}
+HOS_form_gulf_empire = {
+
+possible = {
+OR = {
+                original_tag = UFL
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = RIG
+                original_tag = MEX
+                original_tag = MAY
+                original_tag = YUC 
+                original_tag = ITZ
+                original_tag = CUB
+                original_tag = JAM
+                original_tag = BAH
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_gulf_empire_flag
+}
+
+
+
+
+}
+HOS_form_csa = {
+
+possible = {
+       OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_csa_flag
+}
+
+
+
+
+}
