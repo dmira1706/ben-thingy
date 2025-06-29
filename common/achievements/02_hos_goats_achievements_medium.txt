@@ -1,0 +1,511 @@
+
+
+unique_id = hos_goats_medium_achievements
+
+
+#############################
+
+HOS_form_italy = {
+
+possible = {
+OR = {
+original_tag = TTS
+                original_tag = PAP
+                original_tag = TOS
+                original_tag = LBV
+                original_tag = SPM
+                original_tag = DAL
+                original_tag = COR
+}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_italy_flag
+}
+
+
+
+
+}
+HOS_form_venice = {
+
+possible = {
+OR = {
+original_tag = TTS
+                original_tag = LBV
+                original_tag = DAL
+}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_venice_flag
+}
+
+
+
+
+}
+HOS_form_syria = {
+
+possible = {
+        OR = {
+                original_tag = ASY
+                original_tag = IRQ
+                original_tag = KUW
+                original_tag = SYR
+                original_tag = LEB
+                original_tag = ISR
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_syria_flag
+}
+
+
+
+
+}
+HOS_form_order = {
+
+possible = {
+        OR = {
+          original_tag = EST
+                original_tag = LAT
+                original_tag = LIT
+                original_tag = PRE
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_order_flag
+}
+
+
+
+
+}
+
+HOS_form_ngc = {
+
+possible = {
+        OR = {
+                original_tag = PRE
+                original_tag = KSH
+                original_tag = SIL
+                original_tag = DDR
+                original_tag = HAN
+                original_tag = SHL
+                original_tag = MEK
+                original_tag = WGR
+                original_tag = RHI
+                original_tag = HES
+                original_tag = THU
+                original_tag = SAX
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_ngc_flag
+}
+
+
+
+
+}
+
+HOS_form_13_col = {
+
+possible = {
+         OR = {
+                original_tag = UAF
+                original_tag = USA
+                original_tag = UPS
+                original_tag = UNY
+                original_tag = UNE
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_13_col_flag
+}
+
+
+
+
+}
+HOS_form_cascadia = {
+
+possible = {
+    original_tag = UCC
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_cascadia_flag
+}
+
+
+
+
+}
+
+HOS_form_great_lakes = {
+
+possible = {
+OR = {
+       original_tag = UPF
+                original_tag = UIL
+                original_tag = UMW
+                original_tag = UPS
+                original_tag = UNY
+				}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_great_lakes_flag
+}
+
+
+
+
+}
+HOS_form_gulf_empire = {
+
+possible = {
+OR = {
+                original_tag = UFL
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = RIG
+                original_tag = MEX
+                original_tag = MAY
+                original_tag = YUC 
+                original_tag = ITZ
+                original_tag = CUB
+                original_tag = JAM
+                original_tag = BAH
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_gulf_empire_flag
+}
+
+
+
+
+}
+HOS_form_csa = {
+
+possible = {
+       OR = {
+                original_tag = CSA
+                original_tag = UTX
+                original_tag = UFL
+                original_tag = UAF
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_csa_flag
+}
+
+
+
+
+}
+
+HOS_form_cauc = {
+
+possible = {
+       OR = {
+                original_tag = GEO
+                original_tag = ARM
+                original_tag = AZR
+                original_tag = DAG
+				original_tag = CIN
+				original_tag = NOA
+				original_tag = KBK
+				original_tag = ABK
+				original_tag = KUB
+				original_tag = KAL
+				original_tag = DON
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_caucasus_flag
+}
+
+
+
+
+}
+
+
+HOS_form_sweden = {
+
+possible = {
+       OR = {
+                original_tag = SWE
+				 original_tag = SMI
+				  original_tag = TAV
+				   original_tag = OST
+				    original_tag = LAP
+					original_tag = EST
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_swedish_empire
+}
+
+
+
+
+}
+
+
+HOS_form_dennor = {
+
+possible = {
+      OR = {
+                original_tag = DEN 
+                original_tag = NOR
+				  original_tag = ICE
+				    original_tag = GRN
+					  original_tag = JAN
+					   original_tag = SHL
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_denmark_norway
+}
+
+
+
+
+}
+
+HOS_form_finland = {
+
+possible = {
+OR = {
+tag = TAV
+tag = OST
+tag = SAV
+tag = KAR
+tag = LAP
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_finland_flag
+}
+
+
+
+
+}
+
+HOS_form_north_sea = {
+
+possible = {
+       OR = {
+                original_tag = DEN 
+                original_tag = ENG 
+                original_tag = NOR 
+				original_tag = ICE
+				original_tag = GRN
+				original_tag = JAN
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_north_sea_empire
+}
+
+
+
+
+}
+HOS_form_iberia = {
+
+possible = {
+       OR = {
+                original_tag = GLC 
+                original_tag = NAV
+                original_tag = POR 
+                original_tag = SPR 
+                original_tag = ADU 
+                original_tag = CAT
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_iberia_flag
+}
+
+
+
+
+}
+HOS_form_austria = {
+
+possible = {
+            original_tag = AUS
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_austria_dual_monarchy
+}
+
+
+
+
+}
+HOS_form_hungary_alone = {
+
+possible = {
+     OR ={
+                original_tag = HUN
+                original_tag = TRA
+            }
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_hungary
+}
+
+
+
+
+}
+
+HOS_form_german_empire = {
+
+possible = {
+     OR = {
+                original_tag = SHL 
+                original_tag = HAN 
+                original_tag = MEK 
+                original_tag = DDR 
+                original_tag = SAX
+                original_tag = THU
+                original_tag = WGR 
+                original_tag = HES 
+                original_tag = EHI 
+                original_tag = WUR 
+                original_tag = BAY 
+                original_tag = SIL 
+                original_tag = KSH 
+                original_tag = PRE 
+                original_tag = VGE
+                original_tag = RHI
+            }
+}
+
+
+
+happened = {
+
+has_country_flag = form_germany_flag_country
+}
+
+
+
+
+}
+
+HOS_form_rus_ger = {
+
+possible = {
+      OR = {
+                original_tag = VGE
+                original_tag = MOL
+            }
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_russia_germany
+}
+
+
+
+
+}

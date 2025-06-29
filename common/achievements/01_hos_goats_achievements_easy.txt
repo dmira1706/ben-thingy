@@ -1,0 +1,299 @@
+
+
+unique_id = hos_goats_easy_achievements
+
+
+#############################
+
+HOS_form_prussia = {
+
+possible = {
+tag = PRE
+
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_prussia_flag
+}
+
+
+
+
+}
+
+
+HOS_form_albania = {
+
+possible = {
+OR = {
+tag = ALB
+tag = MNT
+tag = KOS
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_albania_flag
+}
+
+
+
+
+}
+
+HOS_form_california = {
+
+possible = {
+OR = {
+tag = UCL
+
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_california_flag
+}
+
+
+
+
+}
+
+HOS_form_texas = {
+
+possible = {
+OR = {
+tag = UTX
+
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_texas_flag
+}
+
+
+
+
+}
+
+HOS_form_west_germany = {
+
+possible = {
+OR = {
+tag = SHL
+tag = HAN
+tag = WGR
+tag = RHI
+tag = HES
+tag = WUR
+tag = BAY
+
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_west_germany_flag
+}
+
+
+
+
+}
+HOS_form_east_germany = {
+
+possible = {
+OR = {
+tag = DDR
+tag = MEK
+tag = SAX
+tag = THU
+
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_east_germany_flag
+}
+
+
+
+
+}
+HOS_form_sunshine_empire = {
+
+possible = {
+OR = {
+tag = UFL
+tag = CSA
+
+}
+
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_sunshine_empire_flag
+}
+
+
+
+
+}
+
+HOS_form_roma = {
+
+possible = {
+   OR = {
+            original_tag = ROM
+			original_tag = MOL
+			original_tag = TRA
+			}
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_romania
+}
+
+
+
+
+}
+
+HOS_formable_benelux = {
+
+possible = {
+     OR = {
+                original_tag = HOL 
+                original_tag = BEL 
+                original_tag = LUX 
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_benelux
+}
+
+
+
+
+}
+
+HOS_formable_alpine = {
+
+possible = {
+      OR = {
+                original_tag = SWI
+                original_tag = AUS
+                original_tag = LBV
+                original_tag = SPM
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_alpine_federation
+}
+
+
+
+
+}
+HOS_formable_uk = {
+
+possible = {
+      OR = {
+                original_tag = ENG
+                original_tag = WLS
+                original_tag = SCO 
+                original_tag = NIR 
+                original_tag = IRE
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_uk_flag
+}
+
+
+
+
+}
+HOS_formable_yugo = {
+
+possible = {
+      OR = {
+                original_tag = SLV
+                original_tag = DAL
+                original_tag = CRO 
+                original_tag = BOS 
+                original_tag = HRZ
+                original_tag = VOJ
+                original_tag = SER 
+                original_tag = MNT
+                original_tag = KOS 
+                original_tag = MAC
+            }
+
+}
+
+
+
+happened = {
+
+has_country_flag = HOS_form_yugo_flag
+}
+
+
+
+
+}
+
